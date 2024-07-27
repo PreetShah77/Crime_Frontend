@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #3399cc;
+    --secondary-color: #003366;
+    --background-color: #f8f8f8;
+    --text-color: #333333;
+  }
+  
+  .sos-container {
+    max-width: 600px;
+    margin: 6rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 51, 102, 0.1);
+    text-align: center;
+  }
+  
+  .sos-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .sos-container video,
+  .sos-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sos-container button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sos-container button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .sos-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .sos-container {
+      padding: 1rem;
+      margin: 3rem auto;
+    }
+  
+    .sos-container video,
+    .sos-container img {
+      max-width: 100%;
+    }
+  
+    .sos-container button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }

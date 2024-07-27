@@ -1,0 +1,93 @@
+/* Header.css */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+header li {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header button {
+  background: transparent;
+  border: 2px solid var(--background-color);
+  color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+header a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--accent-color);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    margin: 10px 0;
+  }
+}

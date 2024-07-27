@@ -1,0 +1,114 @@
+.my-reports-container {
+  max-width: 800px; /* Make the container smaller */
+  max-height: 550px; /* Limit the height to make it scrollable */
+  margin: 7rem auto;
+  padding: 2rem;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #003366;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.report-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.report-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.report-text {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.report-media {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .report-content {
+    flex-direction: column;
+  }
+
+  .report-media {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+.reports-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.report-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: #0077be;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #0077be;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+img {
+  max-width: 50%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* For the loading and error states */
+.loading, .error {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.reraise{
+  max-width: 20%;
+}
